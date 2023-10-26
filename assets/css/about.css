@@ -1,0 +1,126 @@
+.section-about-container{
+    background-color: var(--dark-principal);
+    padding: 40px;
+    line-height: 1.6;
+}
+
+
+.section-about{
+    background-color: var(--dark-principal);
+    color: #eedbe8;
+
+    /* display: flex;
+    flex-direction: row;
+    align-items: left;
+justify-content: center; */
+
+display: grid;
+grid-template-columns: 50% 50%;
+   
+}
+
+.about-sous-titre{
+    font-size: .75em;
+    padding: 10px 40px;
+    color: var(--gris);
+}
+
+.about-titre{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:5px 40px;
+    color: var(--mountbatten-pink);
+}
+
+.about-description{
+    padding: 5px 40px;
+    max-width: 60ch;
+    text-align: left;
+}
+
+.about-language-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    background-color: var(--dark-principal);
+    /* max-width: 100%; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex: 1; */
+}
+
+.about-language-container .about-sous-titre{
+color: var(--gris);
+text-align: left;
+}
+
+.about-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.about-card{
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+    height: 120px;
+    background-color: transparent;
+    margin: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* color: var(--dark-principal); */
+}
+
+.about-card .title {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    /* align-self: center; */
+    /* margin-top: 30px; */
+    color: var(--gris);
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.about-card a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about-card:hover p{
+    color: var(--mountbatten-pink);
+}
+
+.about-card:hover title {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+}
+
+@media screen and (max-width:550px){
+    .about-titre{
+        font-size: 1.25em;
+    }
+
+    .about-language-container{
+        justify-content: center;
+        align-items: center;
+    }
+}

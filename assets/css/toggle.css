@@ -1,0 +1,90 @@
+.toggle {
+    margin-bottom: 3rem;
+    align-self:center;
+  }
+
+
+  .toggle [aria-pressed] {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
+    background: none;
+    font: inherit;
+    line-height: inherit;
+    text-align: left;
+    padding: .5rem 0 .0 4rem;
+    position: relative;
+    /* z-index: 5; */
+  }
+  
+  .toggle [aria-pressed]::before,
+  .toggle [aria-pressed]::after {
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    transition: all 0.25s ease;
+  }
+  
+  .toggle [aria-pressed]::before {
+    left: 0;
+    top: 0.2rem;
+    width: 3rem;
+    border: 0.2rem solid #BD7872;
+    background: #BD7872;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px red, 0 0 25px red;
+  }
+  
+  .toggle [aria-pressed]::after {
+    left: 0;
+    top: 0.25rem;
+    background-color: #fff;
+    background-position: center center;
+    border-radius: 50%;
+    width: 1.5rem;
+    border: 0.15rem solid #BD7872;
+  }
+  
+  .toggle [aria-pressed=true]::after {
+    left: 1.6rem;
+    border-color: #36a829;
+    color: #36a829;
+  }
+  
+  .toggle [aria-pressed=true]::before {
+    background-color: #5C7E58;
+    border-color: #5C7E58;
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 15px green, 0 0 25px green;
+  }
+  
+  /* .stars,
+  .twinkling {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .stars {
+    background: #000 url(https://assets.codepen.io/406785/stars.png) repeat top center;
+    z-index: 0;
+  }
+  
+  .twinkling {
+    animation: twinkle 200s linear infinite;
+    background: transparent url(https://assets.codepen.io/406785/twinkling.png) repeat top center;
+    z-index: 1;
+  }
+  
+  @keyframes twinkle {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+   */
+  
+  

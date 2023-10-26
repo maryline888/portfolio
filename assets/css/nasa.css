@@ -1,0 +1,90 @@
+.nasaConteneur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+
+/* Styles pour l'image NASA (ajustez selon vos besoins) */
+.nasaConteneurToday,
+.nasaConteneurYesterday
+ {
+    /* text-align: center; */
+    /* max-width: 50%; */
+    margin: auto;
+   
+
+}
+
+.nasaConteneurToday img,
+.nasaConteneurYesterday img{
+    width: 100%;
+    height: 100%;
+}
+
+.nasaYesterdayTitre,
+.nasaTodayTitre {
+    color: white;
+    font-size: 18px;
+}
+.fade {
+    position: relative;
+    width: 100%;
+    /* min-height: 20vh; */
+    /* top: -25px; */
+    background: linear-gradient(0deg, transparent, #000000 75%);
+    /* z-index: 1; */
+  }
+  /* section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 300px;
+    text-align: justify;
+  } */
+  .text-container {
+    padding: 0 50px;
+    position: relative;
+    transform-origin: 50% 100%;
+    /* animation: starWars 55s cubic-bezier(0.4, 0, 1, 1) 1 forwards; */
+  }
+
+  .nasaImgTitre {
+    color: white;
+    text-align: left;
+}
+
+.nasaImg {
+    width: 100%;
+}
+
+  
+  @keyframes starWars {
+    0% {
+      top: 0;
+      transform: rotateX(20deg) translateZ(0);
+      opacity: 1;
+    }
+    90% {
+      top: -7000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      transform: rotateX(0deg) translateZ(0);
+      opacity: 1;
+    }
+  }
+  
