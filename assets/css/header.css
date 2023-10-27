@@ -11,16 +11,15 @@ header .logo-container{
     color: var(--test-logo);
     padding: 10px 30px;
     font-weight: 400;
-    font-size: 4.25em;
+    font-size: 2.85em;
     font-family: 'Mrs Saint Delafield', cursive;
-
 }
 
 header div{
     margin-left: auto;
 }
 
-nav ul{
+/* nav ul{
     display: flex;
     flex-direction: row;
    list-style: none;
@@ -30,7 +29,7 @@ nav ul{
 nav ul li{
     padding: 30px;
     /* color: var(--mountbatten-pink); */
-}
+} */
 
 
 /* 
