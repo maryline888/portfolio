@@ -39,7 +39,7 @@
 .intro-container h1 {
     white-space: normal;
     text-align: end;
-    color: var(--test-logo);
+    color: var(--logo);
     font-size: 3em;
     padding-bottom: 30px;
 }
@@ -85,7 +85,7 @@
 }
 
 .section-btn-cv {
-    background-color: var(--dark-principal);
+    background-color: var(--eerie-black);
     padding: 40px 0;
     display: flex;
     align-content: center;
@@ -209,6 +209,7 @@
         max-width: 100%;
         text-align: left;
         padding: 0 30px;
+        align-items: center;
     }
 
     .intro-container .intro-presentation {
